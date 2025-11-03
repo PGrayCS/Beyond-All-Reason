@@ -4,7 +4,7 @@ local widget = widget ---@type Widget
 function widget:GetInfo()
 	return {
 		name      = "LOS View",
-		desc      = "Turns LOS view on when playing and off when becomming spectator.",
+		desc      = "Turns LOS view on when playing and off when becoming spectator.",
 		author    = "Bluestone",
 		date      = "",
 		license   = "GNU GPL, v2 or later",

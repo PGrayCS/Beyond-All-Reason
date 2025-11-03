@@ -715,7 +715,7 @@ and I dont think you can get wether a unit is seen in airlos or regular los
 its either seen or not
 raw is generally preferred, as is much faster in than creating a table
 isnt 'typed' meaning that its a radar dot that has been revealed or not?
-I definately think so
+I definitely think so
 so if you use raw = true
 then result = 15 ( 1 1 1 1 ) means in radar, in los, known unittype
 also, if result is > 2, that means that the unitDefID is known

@@ -568,7 +568,7 @@ end
 --
 -- If you know the ID etc you can issue a command directly.
 -- If the engine accepts the command, true will be returned.
--- This should not be interpreted as a succesful command
+-- This should not be interpreted as a successful command
 -- however. A failed command might trigger Unit Idle.
 --
 -- If you do not control this unit, and the engine decides
