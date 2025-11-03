@@ -68,21 +68,21 @@ if gadgetHandler:IsSyncedCode() then
 			Spring.SendMessageToPlayer(playerID, "Unitname '"..unitName.."' isnt valid")
 			return
 		end
-		local succesfullyCreated = 0
+		local successfullyCreated = 0
 		for i=1, amount do
 			local unitID = Spring.CreateUnit(unitDefID, x, Spring.GetGroundHeight(x, z), z, 0, teamID)
 			if unitID ~= nil then
-				succesfullyCreated = succesfullyCreated + 1
+				successfullyCreated = successfullyCreated + 1
 				if xp and type(xp) == 'number' then
 					Spring.SetUnitExperience(unitID, xp)
 				end
 			end
 		end
-		if succesfullyCreated > 0 then
+		if successfullyCreated > 0 then
 			if isSilentUnitGift[unitDefID] == nil then
-				Spring.SendMessageToTeam(teamID, "You have been given: "..succesfullyCreated.." "..unitName)
+				Spring.SendMessageToTeam(teamID, "You have been given: "..successfullyCreated.." "..unitName)
 			end
-			Spring.SendMessageToPlayer(playerID, "You have given team "..teamID..": "..succesfullyCreated.." "..unitName)
+			Spring.SendMessageToPlayer(playerID, "You have given team "..teamID..": "..successfullyCreated.." "..unitName)
 		end
 	end
 

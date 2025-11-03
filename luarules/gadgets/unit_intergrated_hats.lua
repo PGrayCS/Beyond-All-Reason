@@ -90,7 +90,7 @@ function gadget:UnitCreated(unitID, unitDefID, teamID, builderID)
 	-- we increment every time a unit is made, makes for a good rng in our case
 	unitCount = unitCount + 1
 
-	-- hide all but the choosen hat
+	-- hide all but the chosen hat
 	local numberOfHats = hatCounts[unitDefID]
 	if numberOfHats then
 		local unitPieceList = Spring.GetUnitPieceMap(unitID)

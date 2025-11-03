@@ -309,7 +309,7 @@ if gadgetHandler:IsSyncedCode() then
 	end
 	-- terrain deformer <br>
 	-- all deformers are performed independantly, rather than merged into a more efficent single caculation, to let the user stack them multiple times in whatever order
-	-- expected format, where each command must be seperated by a comma, space sensetive:
+	-- expected format, where each command must be separated by a comma, space sensetive:
 	--		command <required> [optional], command [optional] [optional], command mode + <height>, etc
 	-- commands:
 	-- 		invertmap [height] or ["wet"]			inverts the height map around the specified point, or "wet" water level aka zero, if unspecified highest ends at zero
@@ -333,7 +333,7 @@ if gadgetHandler:IsSyncedCode() then
 		local commands = string.split(debugString,",")
 
 		-- do we need a list of most common heights? and if so sample it once for all functions
-		-- mode, math mode as in mean, median, and mode, where mode is the most commonly occuring value
+		-- mode, math mode as in mean, median, and mode, where mode is the most commonly occurring value
 		-- height gets rounded into stepsize of MODESTEPSIZE variable, counted, and sorted based on that count, using the flatest surface found within that step as the representitive height
 		local modeArray = {[1]=0}
 		if string.find(debugString, "mode") then
